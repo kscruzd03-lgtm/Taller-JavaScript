@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4</title>
+</head>
+<body>
+    
+    <div class="container">
+        <h2>Gestión de Inventario</h2>
+        
+        <form id="formInventario">
+            <input type="text" id="nombreP" placeholder="Nombre Producto">
+            <input type="number" id="precioP" placeholder="Precio ($)">
+            <input type="number" id="cantP" placeholder="Cantidad">
+            <input type="text" id="catP" placeholder="Categoría">
+            <button type="button" id="btnAgregar">Agregar producto</button>
+        </form>
+
+        <table id="tablaInventario">
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Categoría</th>
+                    <th>Precio</th>
+                    <th>Cantidad</th>
+                    <th>Valor total</th>
+                    <th>Acción</th>
+                </tr>
+            </thead>
+            <tbody id="cuerpoTabla">
+                <!-- Se llena mediante JS -->
+            </tbody>
+        </table>
+
+        <div class="totales">
+            <p>Total items registrados: <span id="totalCant">0</span></p>
+            <p>Valor total del inventario: $<span id="totalValor">0</span></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html>
