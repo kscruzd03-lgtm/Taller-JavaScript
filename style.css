@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Impact&family=Courier+Prime:wght@700&display=swap');
+
+body {
+    font-family: 'Courier Prime', monospace;
+    background-color: #121212;
+    background-image: radial-gradient(#2b2b2b 20%, transparent 20%);
+    background-size: 12px 12px;
+    padding: 40px 15px;
+    margin: 0;
+}
+
+.container {
+    background: #f4f1ea;
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 30px;
+    border: 3px solid #000;
+    box-shadow: 10px 10px 0px #000;
+    text-align: center;
+    transform: rotate(-1deg);
+}
+
+h2 {
+    font-family: 'Impact', sans-serif;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    background-color: #ffde00;
+    color: #000;
+    display: inline-block;
+    padding: 8px 18px;
+    border: 3px solid #000;
+    transform: rotate(1.5deg);
+    box-shadow: 5px 5px 0px #000;
+    margin-top: 0;
+}
+
+.subtitulo {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    margin-bottom: 25px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.btn-menu {
+    background-color: #ff2a75;
+    color: #fff;
+    font-family: 'Impact', sans-serif;
+    font-size: 1.3rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 3px solid #000;
+    padding: 12px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 4px 4px 0px #000;
+    transition: all 0.1s ease;
+}
+
+.btn-menu span {
+    background-color: #00e5ff;
+    color: #000;
+    padding: 2px 8px;
+    border: 2px solid #000;
+    font-size: 1rem;
+}
+
+.btn-menu:nth-child(2) { background-color: #00e5ff; color: #000; }
+.btn-menu:nth-child(2) span { background-color: #ffde00; }
+
+.btn-menu:nth-child(3) { background-color: #ffde00; color: #000; }
+.btn-menu:nth-child(3) span { background-color: #ff2a75; color: #fff; }
+
+.btn-menu:nth-child(4) { background-color: #adff2f; color: #000; }
+.btn-menu:nth-child(4) span { background-color: #000; color: #fff; }
+
+.btn-menu:hover {
+    transform: translate(-3px, -3px);
+    box-shadow: 7px 7px 0px #000;
+}
