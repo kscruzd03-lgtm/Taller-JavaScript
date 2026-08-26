@@ -19,7 +19,7 @@ function calcularDefinitiva() {
 
     if (n1 < 0 || n1 > 5 || n2 < 0 || n2 > 5 || n3 < 0 || n3 > 5) {
         div.classList.add("error");
-        div.innerHTML = "Las notas deben estar estrictamente entre 0.0 y 5.0.";
+        div.innerHTML = "Las notas deben estar strictly entre 0.0 y 5.0.";
         return;
     }
 

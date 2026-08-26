@@ -1,4 +1,4 @@
-document.getElementById("btnRegistrar").addEventListener("click", registrarUsuario);
+document.getElementById("btnRegistrarse").addEventListener("click", registrarUsuario);
 
 function registrarUsuario() {
     // 1. Obtener valores con .value

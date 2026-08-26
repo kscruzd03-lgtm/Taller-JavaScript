@@ -2,29 +2,40 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio 2 - Calculadora de Compra</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="card">
+        <!-- Stickers decorativos estilo Paper Cutout -->
+        <div class="tape-sticker"></div>
+        <div class="star-sticker">★</div>
+
+        <!-- Botón para regresar al menú principal -->
+        <a href="../index.html" class="btn-volver">← VOLVER AL MENÚ</a>
+
         <h2>Calculadora de Compra</h2>
+
         <form id="formCompra">
-            <label>Producto:</label>
+            <label for="producto">Producto:</label>
             <input type="text" id="producto" placeholder="Ej: Hamburguesa">
             
-            <label>Precio ($):</label>
+            <label for="precio">Precio ($):</label>
             <input type="number" id="precio" placeholder="Ej: 15000">
             
-            <label>Cantidad:</label>
+            <label for="cantidad">Cantidad:</label>
             <input type="number" id="cantidad" placeholder="Ej: 3">
             
-            <label>Descuento (% opcional):</label>
+            <label for="descuento">Descuento (% opcional):</label>
             <input type="number" id="descuento" value="0">
             
             <button type="button" id="btnCalcular">Calcular</button>
         </form>
+
         <div id="resumen" class="resultado"></div>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>

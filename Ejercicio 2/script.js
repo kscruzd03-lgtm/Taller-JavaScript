@@ -30,6 +30,6 @@ function calcularCompra() {
         <p><strong>Descuento (${pctDescuento}%):</strong> -$${montoDescuento.toLocaleString('es-CO')}</p>
         <p><strong>IVA (19%):</strong> $${iva.toLocaleString('es-CO')}</p>
         <hr>
-        <p><strong>Total:</strong> $${total.toLocaleString('es-CO')}</p>
+        <p class="total-destacado"><strong>Total:</strong> $${total.toLocaleString('es-CO')}</p>
     `;
 }

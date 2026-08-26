@@ -1,13 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicio 4</title>
+    <title>Ejercicio 4 - Sistema de Inventario</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
     <div class="container">
+        <!-- Stickers decorativos estilo Paper Cutout -->
+        <div class="tape-sticker"></div>
+        <div class="cross-sticker">✖</div>
+
+        <!-- Botón para regresar al menú principal -->
+        <a href="../index.html" class="btn-volver">← VOLVER AL MENÚ</a>
+
         <h2>Gestión de Inventario</h2>
         
         <form id="formInventario">
@@ -18,28 +26,30 @@
             <button type="button" id="btnAgregar">Agregar producto</button>
         </form>
 
-        <table id="tablaInventario">
-            <thead>
-                <tr>
-                    <th>Producto</th>
-                    <th>Categoría</th>
-                    <th>Precio</th>
-                    <th>Cantidad</th>
-                    <th>Valor total</th>
-                    <th>Acción</th>
-                </tr>
-            </thead>
-            <tbody id="cuerpoTabla">
-                <!-- Se llena mediante JS -->
-            </tbody>
-        </table>
+        <div class="table-responsive">
+            <table id="tablaInventario">
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Categoría</th>
+                        <th>Precio</th>
+                        <th>Cantidad</th>
+                        <th>Valor total</th>
+                        <th>Acción</th>
+                    </tr>
+                </thead>
+                <tbody id="cuerpoTabla">
+                    <!-- Se llena mediante JS -->
+                </tbody>
+            </table>
+        </div>
 
         <div class="totales">
             <p>Total items registrados: <span id="totalCant">0</span></p>
             <p>Valor total del inventario: $<span id="totalValor">0</span></p>
         </div>
     </div>
-    <script src="script.js"></script>
 
+    <script src="script.js"></script>
 </body>
 </html>

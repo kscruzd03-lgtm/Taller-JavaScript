@@ -1,87 +1,130 @@
 @import url('https://fonts.googleapis.com/css2?family=Impact&family=Courier+Prime:wght@700&display=swap');
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Courier Prime', monospace;
     background-color: #121212;
     background-image: radial-gradient(#2b2b2b 20%, transparent 20%);
-    background-size: 12px 12px;
+    background-size: 14px 14px;
     padding: 40px 15px;
     margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container {
+    position: relative;
     background: #f4f1ea;
-    max-width: 480px;
+    width: 100%;
+    max-width: 650px;
     margin: 0 auto;
-    padding: 30px;
-    border: 3px solid #000;
-    box-shadow: 10px 10px 0px #000;
+    padding: 45px 35px 35px;
+    border: 4px solid #000;
+    box-shadow: 12px 12px 0px #000;
     text-align: center;
-    transform: rotate(-1deg);
+    transform: rotate(-0.5deg);
+}
+
+/* Elementos decorativos industriales (Sin emojis/stickers caricaturescos) */
+.tape-sticker {
+    position: absolute;
+    top: -18px;
+    left: 40px;
+    width: 140px;
+    height: 32px;
+    background: rgba(220, 215, 200, 0.85);
+    border-left: 2px dashed #999;
+    border-right: 2px dashed #999;
+    transform: rotate(-2deg);
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+.badge-tech {
+    position: absolute;
+    top: -15px;
+    right: 30px;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Courier Prime', monospace;
+    font-size: 0.75rem;
+    font-weight: bold;
+    padding: 4px 10px;
+    border: 1px solid #000;
+    letter-spacing: 1.5px;
+    transform: rotate(3deg);
 }
 
 h2 {
     font-family: 'Impact', sans-serif;
-    font-size: 2.5rem;
+    font-size: 2.7rem;
     text-transform: uppercase;
     background-color: #ffde00;
     color: #000;
-    display: inline-block;
-    padding: 8px 18px;
+    display: table;
+    margin: 0 auto;
+    padding: 10px 22px;
     border: 3px solid #000;
-    transform: rotate(1.5deg);
-    box-shadow: 5px 5px 0px #000;
-    margin-top: 0;
+    transform: rotate(1deg);
+    box-shadow: 6px 6px 0px #000;
 }
 
 .subtitulo {
     font-weight: bold;
     text-transform: uppercase;
     font-size: 0.9rem;
-    margin-bottom: 25px;
+    margin-top: 22px;
+    margin-bottom: 30px;
+    letter-spacing: 0.5px;
+    color: #333;
 }
 
 .menu {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 16px;
 }
 
 .btn-menu {
     background-color: #ff2a75;
     color: #fff;
     font-family: 'Impact', sans-serif;
-    font-size: 1.3rem;
+    font-size: 1.35rem;
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 1px;
     border: 3px solid #000;
-    padding: 12px 15px;
+    padding: 12px 18px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    box-shadow: 4px 4px 0px #000;
+    box-shadow: 5px 5px 0px #000;
     transition: all 0.1s ease;
 }
 
-.btn-menu span {
+.btn-menu .num {
     background-color: #00e5ff;
     color: #000;
-    padding: 2px 8px;
+    padding: 4px 10px;
     border: 2px solid #000;
-    font-size: 1rem;
+    font-size: 1.1rem;
+    box-shadow: 2px 2px 0px #000;
 }
 
 .btn-menu:nth-child(2) { background-color: #00e5ff; color: #000; }
-.btn-menu:nth-child(2) span { background-color: #ffde00; }
+.btn-menu:nth-child(2) .num { background-color: #ffde00; color: #000; }
 
 .btn-menu:nth-child(3) { background-color: #ffde00; color: #000; }
-.btn-menu:nth-child(3) span { background-color: #ff2a75; color: #fff; }
+.btn-menu:nth-child(3) .num { background-color: #ff2a75; color: #fff; }
 
 .btn-menu:nth-child(4) { background-color: #adff2f; color: #000; }
-.btn-menu:nth-child(4) span { background-color: #000; color: #fff; }
+.btn-menu:nth-child(4) .num { background-color: #000; color: #fff; }
 
 .btn-menu:hover {
     transform: translate(-3px, -3px);
-    box-shadow: 7px 7px 0px #000;
+    box-shadow: 8px 8px 0px #000;
 }
